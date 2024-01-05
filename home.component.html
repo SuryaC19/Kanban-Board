@@ -1,0 +1,65 @@
+<!-- <app-header></app-header> -->
+<!-- <app-navbar></app-navbar> -->
+
+
+<!-- <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title (click)="openDialog()"class="newboard">Create New Board</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+     <mat-card-subtitle> {{longText}}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card> -->
+<!-- <h2 (click)="openDialog()"><span id="span">Create  new  Board</span></h2>
+  <p class="para">Visually manage and organize you work.</p> -->
+<!-- <mat-list *ngFor="let board of boards" class="card" > -->
+<!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="button">
+      <mat-icon>view_list</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          <span (click)="deleteBoard()">delete</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button> -->
+<!-- </mat-menu> -->
+
+
+
+<div class="card-container">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-card-title routerLink="/addboard" class="newboard">Create New Board</mat-card-title>
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-card-subtitle> {{longText}}</mat-card-subtitle>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div>
+  <div class="refresh">
+    <button mat-icon-button (click)="getAllBoard()">
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </div>
+  <app-board-list *ngFor="let board of boards" [boards]="board" class="board-list"></app-board-list>
+
+
+
+
+
+        <!-- <app-stage-view *ngIf="selectedBoard" [selectedBoard]="selectedBoard"></app-stage-view> -->
+    <!-- </mat-sidenav-content> -->
+    <!-- <span class="boardName" routerLink="/stageView/{{board.boardName}}">{{board.boardName}}</span>
+        </mat-list> -->

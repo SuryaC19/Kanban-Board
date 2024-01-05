@@ -1,0 +1,53 @@
+<!-- <h1>KαɳႦαɳ Tσσʅ</h1> -->
+<div class="title">
+    <p>Create a user-friendly Kanban board tool with customizable</p>
+    <p>columns for efficient task tracking and</p>
+    <p>team coordination.</p>
+</div>
+<div>
+    <img src="../../assets/istockphoto-1199291049-612x612.jpg">
+</div>
+
+<form [formGroup]="loginForm">
+<mat-card class="example-card">
+    <!-- <mat-card-header> -->
+      <!-- <mat-card-title style="padding-left: 180px;font-size: xx-large;margin-top: 20px;">LOGIN</mat-card-title> -->
+    <!-- </mat-card-header> -->
+    <div class="logtitle"><h2>Login</h2></div>
+    <mat-card-content>
+        <h4>Email Id</h4>
+        <mat-form-field class="form" appearance="outline">
+            <input matInput  type="text" required  formControlName="emailId" class="form-control" ><div class="login-icon"><mat-icon>email</mat-icon></div>
+            <mat-error *ngIf="emailId?.errors?.['required']">
+                Email id is required.
+            </mat-error>
+
+            <mat-error *ngIf="emailId?.errors?.['pattern']">
+                Email should be in format example@gmail.com
+            </mat-error>
+        </mat-form-field>
+        <h4>Password</h4>
+        <mat-form-field class="form" appearance="outline" >
+            <input matInput  type="password" required  formControlName="password" class="form-control"><div class="login-icon"><mat-icon>lock</mat-icon></div>
+        
+            <mat-error *ngIf="password?.errors?.['required']">
+                password  is required.
+            </mat-error>
+    
+            <mat-error *ngIf="password?.errors?.['pattern']">
+                Password should have min 8 letter password, with at least a symbol, upper and lower case letters
+                and a number.
+            </mat-error>
+        </mat-form-field>
+        
+    </mat-card-content>
+        <button mat-flat-button  color="primary" (click)="validateUserLogin()" class="login">Submit</button>
+        <br>
+        <hr>
+        <span class="sign-up">To Create New Account.Click here</span>
+        <button mat-button color="primary" (click)="navigateToSingUp()" class="signup">SignUp</button>
+
+  </mat-card>
+</form>
+
+

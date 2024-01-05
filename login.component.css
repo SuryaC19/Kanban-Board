@@ -1,0 +1,85 @@
+.example-card {
+    width: 26%;
+    height: 550px;
+    margin-left: 75em;
+    margin-top: 12em;  
+    background-color:rgba(239, 255, 255, 0.204);
+    box-shadow: 2px 2px 3px 3px rgb(167, 232, 228);  
+  }
+  
+  .example-header-image {
+    background-image: url('../../assets/images.png');
+    background-size:cover;
+    margin-left: 60px;
+    margin-right: -110px;
+  }
+  h4{
+    padding-top: 30px;
+    margin-left: 50px;
+    font-weight: 600;
+  }
+  h1{
+    margin-left:15em;
+    padding-top: 15px;
+    font-size:50px;
+    font-weight: 900;
+    color: brown;
+    text-decoration:underline ;
+  }
+  .login{
+    margin-left: 78px;
+    margin-top: 40px;
+    
+    width: 65%;
+    /* height: 45px; */
+    font-size: 20px;
+  }
+  .signup{
+    margin-left: 15em;
+    width: 8rem;
+    font-size: 20px;
+    margin-top: -33px;
+    text-decoration: underline;
+    
+  }
+
+.form{
+  width: 75%;
+  margin-left: 50px;
+}
+.title{
+  float: left;
+}
+p{
+  font-size: x-large;
+  color:rgb(117, 116, 116);
+  
+  margin-left: 300px;
+}
+img{
+  float: left;
+  margin-top: 10em;
+  margin-left: -46em;
+  margin-right: 20px;
+}
+.icon{
+  /* width:24px; */
+  height: 100px; 
+}
+.login-icon{
+  margin-top: -22px;
+  margin-left: 18em;
+}
+.logtitle{
+  margin-left: 15em;
+  margin-top: 10px;
+}
+h2{
+  font-size: xx-large;
+  font-weight: 500;
+}
+.sign-up{
+  font-size: large;
+  margin-left: 30px;
+  margin-top: 20px;
+}
